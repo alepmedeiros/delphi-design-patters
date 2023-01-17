@@ -3,11 +3,12 @@ unit elementos;
 interface
 
 uses
-  interfaces;
+  interfaces, calculosicms;
 
 type
   TElementos = class(TInterfacedObject, iElementos)
   private
+    FAdapter: iCalculosAdapter;
     FValorProduto: Double;
     FValorFrete: Double;
     FValorSeguro: Double;
@@ -39,6 +40,7 @@ type
     function PercentualReducao: Double; overload;
     function PercentualDiferimento(Value: Double): iElementos; overload;
     function PercentualDiferimento: Double; overload;
+    function Calcula(Value: String): iCalculosAdapter;
   end;
 
 implementation
@@ -54,6 +56,13 @@ function TElementos.AliquotaICMS(Value: Double): iElementos;
 begin
   Result := Self;
   FAliquotaICMS := Value;
+end;
+
+function TElementos.Calcula(Value: String): iCalculosAdapter;
+begin
+  if not Assigned(FAdapter) then
+    FAdapter := TCalculosAdapter.New(Self).CST(Value);
+  Result := FAdapter;
 end;
 
 constructor TElementos.Create;

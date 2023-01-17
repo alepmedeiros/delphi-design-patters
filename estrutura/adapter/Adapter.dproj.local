@@ -2,34 +2,34 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2023/01/16 15:29:20.000.526,=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/01/16 15:30:25.000.313,C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Adapter.dproj</Transaction>
-    <Transaction>2023/01/16 15:31:05.000.126,C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\lixo\designpatternDelphi\adapter\Unit1.dfm</Transaction>
-    <Transaction>2023/01/16 15:31:05.000.126,C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\lixo\designpatternDelphi\adapter\Unit1.pas</Transaction>
-    <Transaction>2023/01/16 15:31:08.000.810,C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Adapter.dproj=D:\lixo\designpatternDelphi\adapter\Adapter.dproj</Transaction>
+    <Transaction>2023/01/16 15:30:25.000.313,C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Adapter.dproj=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/01/16 15:31:05.000.126,D:\lixo\designpatternDelphi\adapter\Unit1.dfm=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/16 15:31:05.000.126,D:\lixo\designpatternDelphi\adapter\Unit1.pas=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/16 15:31:08.000.810,D:\lixo\designpatternDelphi\adapter\Adapter.dproj=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\Adapter.dproj</Transaction>
     <Transaction>2023/01/16 20:08:48.000.886,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 06:21:47.000.183,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.interfaces.pas</Transaction>
+    <Transaction>2023/01/17 06:21:47.000.183,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.interfaces.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
     <Transaction>2023/01/17 11:27:24.000.778,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 11:29:41.000.011,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.elementos.pas</Transaction>
+    <Transaction>2023/01/17 11:29:41.000.011,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.elementos.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
     <Transaction>2023/01/17 11:31:32.000.645,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 11:33:47.000.990,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculos.pas</Transaction>
-    <Transaction>2023/01/17 11:39:00.000.171,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculos.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms00.pas</Transaction>
+    <Transaction>2023/01/17 11:33:47.000.990,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculos.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 11:39:00.000.171,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms00.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculos.pas</Transaction>
     <Transaction>2023/01/17 12:13:09.000.243,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 12:16:00.000.322,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms20.pas</Transaction>
+    <Transaction>2023/01/17 12:16:00.000.322,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms20.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
     <Transaction>2023/01/17 12:17:41.000.306,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 12:18:19.000.897,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms51.pas</Transaction>
+    <Transaction>2023/01/17 12:18:19.000.897,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms51.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
     <Transaction>2023/01/17 13:47:16.000.752,=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 13:50:22.000.846,D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas=D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms.pas</Transaction>
-    <Transaction>2023/01/17 14:53:59.838,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms.pas=</Transaction>
-    <Transaction>2023/01/17 14:53:59.907,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms00.pas=</Transaction>
-    <Transaction>2023/01/17 14:53:59.928,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms20.pas=</Transaction>
-    <Transaction>2023/01/17 14:53:59.946,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms51.pas=</Transaction>
-    <Transaction>2023/01/17 14:53:59.964,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.elementos.pas=</Transaction>
-    <Transaction>2023/01/17 14:53:59.981,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.interfaces.pas=</Transaction>
-    <Transaction>2023/01/17 15:24:34.298,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 15:29:38.851,D:\MyRepository\delphi-design-patterns\estrutura\adapter\interfaces.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 15:37:14.441,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 15:39:06.214,D:\MyRepository\delphi-design-patterns\estrutura\adapter\calculosicms.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 15:46:35.726,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
-    <Transaction>2023/01/17 15:52:05.069,D:\MyRepository\delphi-design-patterns\estrutura\adapter\elementos.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 13:50:22.000.846,D:\lixo\designpatternDelphi\estrutural\adapter\adpter.calculosicms.pas=D:\lixo\designpatternDelphi\estrutural\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.838,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms.pas=</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.928,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms20.pas=</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.946,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms51.pas=</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.981,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.interfaces.pas=</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.964,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.elementos.pas=</Transaction>
+    <Transaction>2023/01/17 14:53:59.000.907,D:\MyRepository\delphi-design-patterns\estrutura\adapter\adpter.calculosicms00.pas=</Transaction>
+    <Transaction>2023/01/17 15:24:34.000.298,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 15:29:38.000.851,D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\interfaces.pas</Transaction>
+    <Transaction>2023/01/17 15:37:14.000.441,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 15:39:06.000.214,D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\calculosicms.pas</Transaction>
+    <Transaction>2023/01/17 15:46:35.000.726,=D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas</Transaction>
+    <Transaction>2023/01/17 15:52:05.000.069,D:\MyRepository\delphi-design-patterns\estrutura\adapter\Unit2.pas=D:\MyRepository\delphi-design-patterns\estrutura\adapter\elementos.pas</Transaction>
   </Transactions>
 </BorlandProject>

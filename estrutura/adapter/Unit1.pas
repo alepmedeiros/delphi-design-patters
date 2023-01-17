@@ -97,13 +97,15 @@ var
 
 implementation
 
+uses
+  interfaces;
+
 {$R *.dfm}
 
 procedure TForm1.btnCalculoICMS00Click(Sender: TObject);
 var
   lVAlorBC, lVAlorICMS: Double;
 begin
-  TCalculosAdapter.New(
   TElementos.New
     .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
     .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
@@ -111,8 +113,8 @@ begin
     .ValorDespesas(StrToFloatDef(edtVrDespesas.Text,0))
     .ValorDesconto(StrToFloatDef(edtVrDesconto.Text,0))
     .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0)))
-    .CST('00')
+    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
+    .Calcula('00')
     .ValorBaseCalculo(lVAlorBC)
     .ValorICMS(lVAlorICMS);
 
@@ -124,7 +126,6 @@ procedure TForm1.btnCalculoICMS20Click(Sender: TObject);
 var
   lVAlorBC, lVAlorICMS, lValorDeson: Double;
 begin
-  TCalculosAdapter.New(
   TElementos.New
     .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
     .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
@@ -133,8 +134,8 @@ begin
     .ValorDesconto(StrToFloatDef(edtVrDesconto.Text,0))
     .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
     .PercentualReducao(StrToFloatDef(edtPercentualReducao.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0)))
-    .CST('20')
+    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
+    .Calcula('20')
     .ValorBaseCalculo(lVAlorBC)
     .ValorICMS(lVAlorICMS)
     .ValorICMSDesonerado(lValorDeson);
@@ -148,7 +149,6 @@ procedure TForm1.btnCalculoICMS51Click(Sender: TObject);
 var
   lVAlorBC, lVAlorICMS, lValorDeson, lOP: Double;
 begin
- TCalculosAdapter.New(
   TElementos.New
     .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
     .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
@@ -158,8 +158,8 @@ begin
     .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
     .PercentualDiferimento(StrToFloatDef(edtPercentualDif.Text,0))
     .PercentualReducao(StrToFloatDef(edtPercentualReducao.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0)))
-    .CST('51')
+    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
+    .Calcula('51')
     .ValorBaseCalculo(lVAlorBC)
     .ValorICMS(lVAlorICMS)
     .ValorICMSOperacao(lOP)

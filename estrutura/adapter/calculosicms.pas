@@ -17,7 +17,7 @@ type
     FICMS00: iIcms00;
     FICMS20: iIcms20;
     FICMS51: iIcms51;
-    FElementos: iElementos;
+    [weak] FElementos: iElementos;
     FValorBaseCalculo: Double;
     FValorICMS: Double;
     FValorICMSDesonerado: Double;

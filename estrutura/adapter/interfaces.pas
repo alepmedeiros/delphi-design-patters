@@ -40,6 +40,7 @@ type
     function PercentualReducao: Double; overload;
     function PercentualDiferimento(Value: Double): iElementos; overload;
     function PercentualDiferimento: Double; overload;
+    function Calcula(Value: String): iCalculosAdapter;
   end;
 
 implementation
