@@ -413,8 +413,7 @@ object Form1: TForm1
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS pr'#243'prio (vICMS):'
-          ExplicitLeft = 1
-          ExplicitTop = -3
+          ExplicitHeight = 18
         end
         object lblvICM51: TLabel
           Left = 180
@@ -721,8 +720,6 @@ object Form1: TForm1
         BorderStyle = bsNone
         TabOrder = 0
         Text = '0,95'
-        ExplicitLeft = 175
-        ExplicitTop = -1
       end
     end
     object Panel23: TPanel
@@ -758,8 +755,6 @@ object Form1: TForm1
         BorderStyle = bsNone
         TabOrder = 0
         Text = '2,37'
-        ExplicitLeft = 175
-        ExplicitTop = -1
       end
     end
     object Panel24: TPanel

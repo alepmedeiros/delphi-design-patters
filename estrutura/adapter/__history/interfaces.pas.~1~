@@ -1,0 +1,17 @@
+unit interfaces;
+
+interface
+
+type
+  iCalculosAdapter = interface
+    function CST(Value: String): iCalculosAdapter;
+    function ValorBaseCalculo(var Value: Double): iCalculosAdapter;
+    function ValorICMS(var Value: Double): iCalculosAdapter;
+    function ValorICMSDesonerado(var Value: Double): iCalculosAdapter;
+    function ValorICMSOperacao(var Value: Double): iCalculosAdapter;
+    function ValorDiferimento(var Value: Double): iCalculosAdapter;
+  end;
+
+implementation
+
+end.
