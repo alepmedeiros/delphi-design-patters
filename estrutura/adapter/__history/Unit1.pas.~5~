@@ -84,8 +84,6 @@ type
     btnCalculoICMS20: TButton;
     btnCalculoICMS00: TButton;
     procedure btnCalculoICMS00Click(Sender: TObject);
-    procedure btnCalculoICMS20Click(Sender: TObject);
-    procedure btnCalculoICMS51Click(Sender: TObject);
   private
 
   public
@@ -97,15 +95,13 @@ var
 
 implementation
 
-uses
-  interfaces;
-
 {$R *.dfm}
 
 procedure TForm1.btnCalculoICMS00Click(Sender: TObject);
 var
   lVAlorBC, lVAlorICMS: Double;
 begin
+  TCalculosAdapter.New(
   TElementos.New
     .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
     .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
@@ -113,62 +109,13 @@ begin
     .ValorDespesas(StrToFloatDef(edtVrDespesas.Text,0))
     .ValorDesconto(StrToFloatDef(edtVrDesconto.Text,0))
     .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
-    .Calcula('00')
+    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0)))
+    .CST('00')
     .ValorBaseCalculo(lVAlorBC)
     .ValorICMS(lVAlorICMS);
 
   lblvBc.Caption := lVAlorBC.ToString;
   lblvICMS.Caption := lVAlorIcms.ToString;
-end;
-
-procedure TForm1.btnCalculoICMS20Click(Sender: TObject);
-var
-  lVAlorBC, lVAlorICMS, lValorDeson: Double;
-begin
-  TElementos.New
-    .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
-    .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
-    .ValorSeguro(StrToFloatDef(edtVrSeguro.Text,0))
-    .ValorDespesas(StrToFloatDef(edtVrDespesas.Text,0))
-    .ValorDesconto(StrToFloatDef(edtVrDesconto.Text,0))
-    .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
-    .PercentualReducao(StrToFloatDef(edtPercentualReducao.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
-    .Calcula('20')
-    .ValorBaseCalculo(lVAlorBC)
-    .ValorICMS(lVAlorICMS)
-    .ValorICMSDesonerado(lValorDeson);
-
-  lblvBC20.Caption := lVAlorBC.ToString;
-  lblvICMS20.Caption := lVAlorICMS.ToString;
-  lblvICMSDeson.Caption := lValorDeson.ToString;
-end;
-
-procedure TForm1.btnCalculoICMS51Click(Sender: TObject);
-var
-  lVAlorBC, lVAlorICMS, lValorDeson, lOP: Double;
-begin
-  TElementos.New
-    .ValorProduto(StrToFloatDef(edtVrProduto.Text,0))
-    .ValorFrete(StrToFloatDef(edtVrFrete.Text,0))
-    .ValorSeguro(StrToFloatDef(edtVrSeguro.Text,0))
-    .ValorDespesas(StrToFloatDef(edtVrDespesas.Text,0))
-    .ValorDesconto(StrToFloatDef(edtVrDesconto.Text,0))
-    .AliquotaICMS(StrToFloatDef(edtAliquotaICMS.Text,0))
-    .PercentualDiferimento(StrToFloatDef(edtPercentualDif.Text,0))
-    .PercentualReducao(StrToFloatDef(edtPercentualReducao.Text,0))
-    .ValorIpi(StrToFloatDef(edtVrIPI.Text,0))
-    .Calcula('51')
-    .ValorBaseCalculo(lVAlorBC)
-    .ValorICMS(lVAlorICMS)
-    .ValorICMSOperacao(lOP)
-    .ValorDiferimento(lValorDeson);
-
-  lblvBC51.Caption := lVAlorBC.ToString;
-  lblvICM51.Caption := lVAlorICMS.ToString;
-  lblvICMSOp.Caption := lOP.ToString;
-  lblvICMSDif.Caption := lValorDeson.ToString
 end;
 
 end.

@@ -1,23 +1,23 @@
-unit adpter.elementos;
+unit elementos;
 
 interface
 
 uses
-  adpter.interfaces;
+  interfaces, calculosicms;
 
 type
   TElementos = class(TInterfacedObject, iElementos)
   private
+    FAdapter: iCalculosAdapter;
     FValorProduto: Double;
     FValorFrete: Double;
     FValorSeguro: Double;
     FValorDespesas: Double;
     FValorDesconto: Double;
     FValorIPI: Double;
-    FValorICMS: Double;
-    FValorReducao: Double;
-    FValorDiferimento: Double;
     FAliquotaICMS: Double;
+    FPercentualReducao: Double;
+    FPercentualDiferimento: Double;
   public
     constructor Create;
     destructor Destroy; override;
@@ -32,19 +32,20 @@ type
     function ValorDespesas: Double; overload;
     function ValorDesconto(Value: Double): iElementos; overload;
     function ValorDesconto: Double; overload;
-    function ValorIPI(Value: Double): iElementos; overload;
+    function ValorIpi(Value: Double): iElementos; overload;
     function ValorIPI: Double; overload;
-    function ValorICMS(Value: Double): iElementos; overload;
-    function ValorICMS: Double; overload;
+    function AliquotaICMS(Value: Double): iElementos; overload;
+    function AliquotaICMS: Double; overload;
     function PercentualReducao(Value: Double): iElementos; overload;
     function PercentualReducao: Double; overload;
     function PercentualDiferimento(Value: Double): iElementos; overload;
     function PercentualDiferimento: Double; overload;
-    function AliquotaICMS(Value: Double): iElementos; overload;
-    function AliquotaICMS: Double; overload;
+    function Calcula(Value: String): iCalculosAdapter;
   end;
 
 implementation
+
+{ TMyClass }
 
 function TElementos.AliquotaICMS: Double;
 begin
@@ -55,6 +56,13 @@ function TElementos.AliquotaICMS(Value: Double): iElementos;
 begin
   Result := Self;
   FAliquotaICMS := Value;
+end;
+
+function TElementos.Calcula(Value: String): iCalculosAdapter;
+begin
+  if not Assigned(FAdapter) then
+    FAdapter := TCalculosAdapter.New(Self).CST(Value);
+  Result := FAdapter;
 end;
 
 constructor TElementos.Create;
@@ -73,6 +81,28 @@ begin
   Result := Self.Create;
 end;
 
+function TElementos.PercentualDiferimento: Double;
+begin
+  Result := FPercentualDiferimento;
+end;
+
+function TElementos.PercentualDiferimento(Value: Double): iElementos;
+begin
+  Result := Self;
+  FPercentualDiferimento := VAlue;
+end;
+
+function TElementos.PercentualReducao: Double;
+begin
+  Result := FPercentualReducao;
+end;
+
+function TElementos.PercentualReducao(Value: Double): iElementos;
+begin
+  Result := Self;
+  FPercentualReducao := Value;;
+end;
+
 function TElementos.ValorDesconto: Double;
 begin
   Result := FValorDesconto;
@@ -81,13 +111,13 @@ end;
 function TElementos.ValorDesconto(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorDesconto := Value;
+  FValorDesconto := VAlue;
 end;
 
 function TElementos.ValorDespesas(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorDespesas := Value;
+  FValorDespesas := VAlue;
 end;
 
 function TElementos.ValorDespesas: Double;
@@ -95,15 +125,10 @@ begin
   Result := FValorDespesas;
 end;
 
-function TElementos.PercentualDiferimento(Value: Double): iElementos;
+function TElementos.ValorFrete(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorDiferimento := Value;
-end;
-
-function TElementos.PercentualDiferimento: Double;
-begin
-  Result := FValorDiferimento;
+  FValorFrete := VAlue;
 end;
 
 function TElementos.ValorFrete: Double;
@@ -111,30 +136,13 @@ begin
   Result := FValorFrete;
 end;
 
-function TElementos.ValorFrete(Value: Double): iElementos;
+function TElementos.ValorIpi(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorFrete := Value;
+  FValorIPI := VAlue;
 end;
 
-function TElementos.ValorICMS(Value: Double): iElementos;
-begin
-  Result := Self;
-  FValorICMS := Value;
-end;
-
-function TElementos.ValorICMS: Double;
-begin
-  Result := FValorICMS;
-end;
-
-function TElementos.ValorIPI(Value: Double): iElementos;
-begin
-  Result := Self;
-  FValorIPI := Value;
-end;
-
-function TElementos.ValorIPI: Double;
+function TElementos.ValorIpi: Double;
 begin
   Result := FValorIPI;
 end;
@@ -147,18 +155,7 @@ end;
 function TElementos.ValorProduto(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorProduto := Value;
-end;
-
-function TElementos.PercentualReducao: Double;
-begin
-  Result := FValorReducao;
-end;
-
-function TElementos.PercentualReducao(Value: Double): iElementos;
-begin
-  Result := Self;
-  FValorReducao := Value;
+  FValorProduto := VAlue;
 end;
 
 function TElementos.ValorSeguro: Double;
@@ -169,7 +166,7 @@ end;
 function TElementos.ValorSeguro(Value: Double): iElementos;
 begin
   Result := Self;
-  FValorSeguro := Value;
+  FValorSeguro := VAlue;
 end;
 
 end.

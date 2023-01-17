@@ -1,0 +1,76 @@
+unit calculosicms;
+
+interface
+
+uses
+  interfaces;
+
+type
+  TCalculosAdapter = class(TInterfacedObject, iCalculosAdapter)
+  private
+    FElementos: iElementos;
+  public
+    constructor Create(Elementos: iElementos);
+    destructor Destroy; override;
+    class function New(Elementos: iElementos): iCalculosAdapter;
+    function CST(Value: String): iCalculosAdapter;
+    function ValorBaseCalculo(var Value: Double): iCalculosAdapter;
+    function ValorICMS(var Value: Double): iCalculosAdapter;
+    function ValorICMSDesonerado(var Value: Double): iCalculosAdapter;
+    function ValorICMSOperacao(var Value: Double): iCalculosAdapter;
+    function ValorDiferimento(var Value: Double): iCalculosAdapter;
+  end;
+
+implementation
+
+{ TMyClass }
+
+constructor TCalculosAdapter.Create(Elementos: iElementos);
+begin
+  FElementos := Elementos;
+end;
+
+function TCalculosAdapter.CST(Value: String): iCalculosAdapter;
+begin
+
+end;
+
+destructor TCalculosAdapter.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TCalculosAdapter.New(Elementos: iElementos): iCalculosAdapter;
+begin
+  Result := Self.Create(Elementos);
+end;
+
+function TCalculosAdapter.ValorBaseCalculo(var Value: Double): iCalculosAdapter;
+begin
+
+end;
+
+function TCalculosAdapter.ValorDiferimento(var Value: Double): iCalculosAdapter;
+begin
+
+end;
+
+function TCalculosAdapter.ValorICMS(var Value: Double): iCalculosAdapter;
+begin
+
+end;
+
+function TCalculosAdapter.ValorICMSDesonerado(
+  var Value: Double): iCalculosAdapter;
+begin
+
+end;
+
+function TCalculosAdapter.ValorICMSOperacao(
+  var Value: Double): iCalculosAdapter;
+begin
+
+end;
+
+end.
