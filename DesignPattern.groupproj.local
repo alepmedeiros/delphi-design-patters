@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/01/23 13:50:00.870,D:\MyRepository\delphi-design-patters\DesignPattern.groupproj=C:\Users\aleme\OneDrive\Documentos\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="D:\MyRepository\delphi-design-patters\comportamental\strategy\Strategy.dproj"/>
+  </Default.Personality>
+</BorlandProject>

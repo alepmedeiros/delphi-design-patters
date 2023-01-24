@@ -1,0 +1,11 @@
+{
+	"name": "strategy",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/sacfiscal/delphiscal": ">0.0.0"
+	}
+}

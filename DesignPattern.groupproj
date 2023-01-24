@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0938F7DD-7F2A-4C48-857D-A944B4A2AB8C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="estrutura\adapter\Adapter.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="comportamental\strategy\Strategy.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Adapter">
+        <MSBuild Projects="estrutura\adapter\Adapter.dproj"/>
+    </Target>
+    <Target Name="Adapter:Clean">
+        <MSBuild Projects="estrutura\adapter\Adapter.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Adapter:Make">
+        <MSBuild Projects="estrutura\adapter\Adapter.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Strategy">
+        <MSBuild Projects="comportamental\strategy\Strategy.dproj"/>
+    </Target>
+    <Target Name="Strategy:Clean">
+        <MSBuild Projects="comportamental\strategy\Strategy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Strategy:Make">
+        <MSBuild Projects="comportamental\strategy\Strategy.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Adapter;Strategy"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Adapter:Clean;Strategy:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Adapter:Make;Strategy:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

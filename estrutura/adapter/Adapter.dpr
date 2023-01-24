@@ -2,7 +2,7 @@ program Adapter;
 
 uses
   Vcl.Forms,
-  Unit1 in 'Unit1.pas' {Form1},
+  DesignPattern.Comportamental.Adapter in 'DesignPattern.Comportamental.Adapter.pas' {Form1},
   interfaces in 'interfaces.pas',
   calculosicms in 'calculosicms.pas',
   elementos in 'elementos.pas';

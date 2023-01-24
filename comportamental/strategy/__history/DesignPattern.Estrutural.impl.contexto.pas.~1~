@@ -1,0 +1,55 @@
+unit DesignPattern.Estrutural.impl.contexto;
+
+interface
+
+uses
+  DesignPattern.Estrutural.interfaces,
+  DesignPattern.Estrutural.impl.icms00,
+  DesignPattern.Estrutural.impl.icms20,
+  DesignPattern.Estrutural.impl.icms51;
+
+type
+  TContexto = class(TInterfacedObject, iContexto)
+  private
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iContexto;
+    function CalcularICMS(Value: iElementos): iStrategy;
+  end;
+
+implementation
+
+{ TMyClass }
+
+function TContexto.CalcularICMS(Value: iElementos): iStrategy;
+var
+  lCST: TTipoICMS;
+begin
+  case lCST.ToEnum(Value.CST) of
+    tp00:
+      Result := TStrategyICMS00.New(Value);
+    tp20:
+      Result := TStrategyICMS20.New(Value);
+    tp51:
+      Result := TStrategyICMS51.New(Value);
+  end;
+end;
+
+constructor TContexto.Create;
+begin
+
+end;
+
+destructor TContexto.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TContexto.New: iContexto;
+begin
+  Result := Self.Create;
+end;
+
+end.
