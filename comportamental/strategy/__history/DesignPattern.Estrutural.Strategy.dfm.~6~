@@ -10,7 +10,9 @@ object Form2: TForm2
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  OldCreateOrder = False
   OnCreate = FormCreate
+  PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 304
@@ -64,17 +66,17 @@ object Form2: TForm2
         object Label1: TLabel
           Left = 0
           Top = 0
-          Width = 148
+          Width = 166
           Height = 20
           Align = alLeft
           Caption = 'Base ICMS pr'#243'prio (vBC):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvBc: TLabel
           AlignWithMargins = True
-          Left = 151
+          Left = 169
           Top = 0
-          Width = 199
+          Width = 181
           Height = 20
           Margins.Top = 0
           Margins.Right = 0
@@ -88,9 +90,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel9: TPanel
@@ -116,16 +118,16 @@ object Form2: TForm2
         object Label2: TLabel
           Left = 0
           Top = 0
-          Width = 161
+          Width = 180
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS pr'#243'prio (vICMS):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICMS: TLabel
-          Left = 161
+          Left = 180
           Top = 0
-          Width = 189
+          Width = 170
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -136,9 +138,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
     end
@@ -186,17 +188,17 @@ object Form2: TForm2
         object Label3: TLabel
           Left = 0
           Top = 0
-          Width = 148
+          Width = 166
           Height = 20
           Align = alLeft
           Caption = 'Base ICMS pr'#243'prio (vBC):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvBC20: TLabel
           AlignWithMargins = True
-          Left = 151
+          Left = 169
           Top = 0
-          Width = 199
+          Width = 181
           Height = 20
           Margins.Top = 0
           Margins.Right = 0
@@ -210,9 +212,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel8: TPanel
@@ -238,16 +240,16 @@ object Form2: TForm2
         object Label5: TLabel
           Left = 0
           Top = 0
-          Width = 161
+          Width = 180
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS pr'#243'prio (vICMS):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICMS20: TLabel
-          Left = 161
+          Left = 180
           Top = 0
-          Width = 189
+          Width = 170
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -258,9 +260,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel16: TPanel
@@ -286,16 +288,16 @@ object Form2: TForm2
         object Label11: TLabel
           Left = 0
           Top = 0
-          Width = 228
+          Width = 256
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS Desonerado (vICMSDeson):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICMSDeson: TLabel
-          Left = 228
+          Left = 256
           Top = 0
-          Width = 122
+          Width = 94
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -306,9 +308,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
     end
@@ -356,17 +358,17 @@ object Form2: TForm2
         object Label7: TLabel
           Left = 0
           Top = 0
-          Width = 148
+          Width = 166
           Height = 20
           Align = alLeft
           Caption = 'Base ICMS pr'#243'prio (vBC):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvBC51: TLabel
           AlignWithMargins = True
-          Left = 151
+          Left = 169
           Top = 0
-          Width = 199
+          Width = 181
           Height = 20
           Margins.Top = 0
           Margins.Right = 0
@@ -380,9 +382,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel14: TPanel
@@ -408,16 +410,16 @@ object Form2: TForm2
         object Label9: TLabel
           Left = 0
           Top = 0
-          Width = 161
+          Width = 180
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS pr'#243'prio (vICMS):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICM51: TLabel
-          Left = 161
+          Left = 180
           Top = 0
-          Width = 189
+          Width = 170
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -428,9 +430,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel17: TPanel
@@ -456,16 +458,16 @@ object Form2: TForm2
         object Label13: TLabel
           Left = 0
           Top = 0
-          Width = 197
+          Width = 217
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS Opera'#231#227'o (vICMSOP):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICMSOp: TLabel
-          Left = 197
+          Left = 217
           Top = 0
-          Width = 153
+          Width = 133
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -476,9 +478,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
       object Panel18: TPanel
@@ -504,16 +506,16 @@ object Form2: TForm2
         object Label15: TLabel
           Left = 0
           Top = 0
-          Width = 202
+          Width = 234
           Height = 20
           Align = alLeft
           Caption = 'Valor ICMS Diferimento (vICMSDif):'
-          ExplicitHeight = 16
+          ExplicitHeight = 18
         end
         object lblvICMSDif: TLabel
-          Left = 202
+          Left = 234
           Top = 0
-          Width = 148
+          Width = 116
           Height = 20
           Align = alClient
           Alignment = taRightJustify
@@ -524,9 +526,9 @@ object Form2: TForm2
           Font.Name = 'Montserrat'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 305
-          ExplicitWidth = 45
-          ExplicitHeight = 18
+          ExplicitLeft = 301
+          ExplicitWidth = 49
+          ExplicitHeight = 21
         end
       end
     end
@@ -543,6 +545,8 @@ object Form2: TForm2
     Padding.Right = 5
     Padding.Bottom = 5
     TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitTop = 8
     object Panel19: TPanel
       Left = 5
       Top = 5
